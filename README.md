@@ -16,16 +16,17 @@ npm install
 cd ms-population
 npm install
 ```
-3. Instalar o Docker no seguinte link:
+4. Instalar o Docker no seguinte link:
 [docker](https://www.docker.com/).
 
-4. Rodar o arquivo docker-compose.yml com o comando:
+5. Rodar o arquivo docker-compose.yml com o comando:
 ```sh 
     docker-compose up
 ```
-5. Aguardar até que suba o container do RabbitMq
+6. Aguardar até que suba o container do RabbitMq
 
-6. Sera disponibilaza os seguintes links:
+7. Sera disponibilaza os seguintes links:
+
 [http://localhost:5001/states](http://localhost:5001/states).
 
 [http://localhost:5001/states/:uf](http://localhost:5001/states/:uf).
@@ -34,9 +35,9 @@ npm install
 
 [http://localhost:5002/population/:uf](http://localhost:5002/population/:uf).
 
-7. As querys se encontram na pasta [Query](https://github.com/Mateus-pilo/jurema.la/tree/master/querys).
+8. As querys se encontram na pasta [Query](https://github.com/Mateus-pilo/jurema.la/tree/master/querys).
 
-8. As demais perguntas se encontram na pasta [Others](https://github.com/Mateus-pilo/jurema.la/tree/master/others).
+9. As demais perguntas se encontram na pasta [Others](https://github.com/Mateus-pilo/jurema.la/tree/master/others).
 
 ### Técnologias Utilizadas
 [Docker](https://www.docker.com/)
