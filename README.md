@@ -25,7 +25,7 @@ npm install
 ```
 6. Aguardar até que suba o container do RabbitMq
 
-7. Sera disponibilaza os seguintes links:
+7. Sera disponibilazado os seguintes links:
 * [http://localhost:5001/states](http://localhost:5001/states).
 * [http://localhost:5001/states/:uf](http://localhost:5001/states/:uf).
 * [http://localhost:5002/population](http://localhost:5002/population).
@@ -44,5 +44,7 @@ npm install
 
 ### Contato
 Mateus Piló Dias - mateus-pilo@hotmail.com
+
 Link do Projeto - [https://github.com/Mateus-pilo/jurema.la](https://github.com/Mateus-pilo/jurema.la)
+
 Whats - (17) 99748-4272
