@@ -27,8 +27,11 @@ npm install
 
 6. Sera disponibilaza os seguintes links:
 [http://localhost:5001/states](http://localhost:5001/states).
+
 [http://localhost:5001/states/:uf](http://localhost:5001/states/:uf).
+
 [http://localhost:5002/population](http://localhost:5002/population).
+
 [http://localhost:5002/population/:uf](http://localhost:5002/population/:uf).
 
 7. As querys se encontram na pasta [Query](https://github.com/Mateus-pilo/jurema.la/tree/master/querys).
@@ -37,8 +40,13 @@ npm install
 
 ### Técnologias Utilizadas
 [Docker](https://www.docker.com/)
+
 [Express](https://expressjs.com/pt-br/)
+
 [RabbitMq](https://www.rabbitmq.com/)
+
 [Postgres](https://www.postgresql.org/)
+
 [NodeJs](https://nodejs.org/en/)
+
 
