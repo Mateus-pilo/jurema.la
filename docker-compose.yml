@@ -1,0 +1,60 @@
+  
+version: "3.4"
+services:
+  
+  rabbit:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - my_net
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=postgres
+    networks:
+      - my_net
+
+  state:
+    image: node
+    command: npm start
+    volumes:
+      - ./ms-state/:/usr/app/ms-state
+    working_dir: /usr/app/ms-state  
+    ports:
+      - "5001:5001"
+    restart: on-failure
+    depends_on:
+      - rabbit
+      - postgres
+    networks:
+      - my_net
+        
+  population:
+    image: node
+    command: npm start
+    volumes:
+      - ./ms-population/:/usr/app/ms-population
+    working_dir: /usr/app/ms-population
+    ports:
+      - "5002:5002"
+    restart: on-failure
+    depends_on:
+      - rabbit
+      - postgres
+
+    networks:
+      - my_net
+
+networks:
+  my_net:
+    driver: bridge
+
+ 

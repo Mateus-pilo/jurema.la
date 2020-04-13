@@ -1,0 +1,16 @@
+{
+  "name": "ms-population",
+  "version": "1.0.0",
+  "description": "Jurema Population",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mateus Pilo Dias",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "express": "^4.17.1"
+  }
+}
